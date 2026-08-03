@@ -1,4 +1,4 @@
-namespace Week1_Logic1
+namespace Week1_Logic1_VioGustian
 {
     public class FooBarr
     {
