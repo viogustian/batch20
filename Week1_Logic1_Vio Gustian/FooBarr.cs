@@ -4,26 +4,26 @@ namespace Week1_Logic1
     {
         public static void Generate(int n)
         {
-            List<string> results = new List<string>();   // buat list result
-            for(int x = 1; x<=n; x++ ) // loop dari x = 1 sampai x = n
+            List<string> results = new List<string>();
+            for(int x = 1; x<=n; x++ )
             {    
                 if(x % 3 == 0 && x % 5 == 0 )
                 {
-                    results.Add("foobar"); // jika x % 3 dan x % 5 = 0 tampilkan foobar
+                    results.Add("foobar");
                 } 
                 else if (x % 3 == 0)
                 {
-                    results.Add("foo"); // jika x % 3 = 0 tampilkan foo
+                    results.Add("foo");
                 } 
                 else if(x % 5 == 0)
                 {
-                    results.Add("bar"); // jika x % 5 = 0 tampilkan bar
+                    results.Add("bar");
                 } 
                 else{
-                    results.Add(x.ToString()); // jika tidak keduanya cetak angkanya
+                    results.Add(x.ToString());
                 }
             }
-            Console.WriteLine(string.Join(", ", results));  // gabungkan semuanya
+            Console.WriteLine(string.Join(", ", results));
             
         }
     }
