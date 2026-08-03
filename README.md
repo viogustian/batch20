@@ -1,6 +1,6 @@
-# Formulatrix SE Backend Bootcamp - Batch 20 🚀
+# Formulatrix SE Backend Bootcamp - Batch 20 
 
-Welcome to my repository! This repository contains a collection of assignments and project submissions for the **Software Engineer Backend Bootcamp - Batch 20** program at Formulatrix. All tasks are developed using **C# (.NET)**.
+Welcome to my repository! This repository contains a collection of assignments and project submissions for the Software Engineer Backend Bootcamp - Batch 20 program at Formulatrix. All tasks are developed using C# (.NET).
 
 ---
 
