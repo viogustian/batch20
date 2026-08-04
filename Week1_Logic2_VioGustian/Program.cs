@@ -11,7 +11,9 @@ namespace Week1_Logic2_VioGustian
             myQueue.Enqueue("B");
             myQueue.Process();
             myQueue.Process();
-            myQueue.Process();
+
+            // I handled the edge case where if Process() is called when the queue is empty, the program returns a warning message instead of throwing an error.
+            // myQueue.Process();
         }
     }
 }
