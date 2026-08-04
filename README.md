@@ -27,3 +27,14 @@ A console application implementing a First-In-First-Out (FIFO) queue system that
 
 **Output:**  
 ![Queue Logic Execution Result](./Week1Logic2VioGustian/output.png)
+
+### 3. Week 1 - Logic 3: Stack Logic
+
+**Description:**  
+A console application implementing a Last-In-First-Out (LIFO) stack system that processes operations using direct method calls. The program is built with Separation of Concerns (SoC) and handles the following specific requirements:
+- `Type(word)`: Pushes `[word]` to the top of the stack and outputs **"Typed [word]"**.
+- `Undo()`: Removes the top value of the stack and outputs **"Undid [word]"**.
+- **Edge Case Handling**: Outputs **"Nothing to undo."** if `Undo()` is called but there is no value left in the stack.
+
+**Output:**  
+![Stack Logic Execution Result](./Week1Logic3VioGustian/output.png)
