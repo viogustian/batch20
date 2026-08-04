@@ -15,7 +15,7 @@ A console application that generates a sequence of outputs based on the followin
 - Multiples of both `3` and `5` print **"FooBar"**.
 
 **Output:**  
-![FooBarr Execution Result](./Week1_Logic1_VioGustian/output.png)
+![FooBarr Execution Result](./Week1Logic1VioGustian/output.png)
 
 ### 2. Week 1 - Logic 2: Queue Logic
 
@@ -26,4 +26,4 @@ A console application implementing a First-In-First-Out (FIFO) queue system that
 - **Edge Case Handling**: Outputs **"Queue is empty"** if `Process()` is called but there is no value left in the queue.
 
 **Output:**  
-![Queue Logic Execution Result](./Week1_Logic2_VioGustian/output.png)
+![Queue Logic Execution Result](./Week1Logic2VioGustian/output.png)
