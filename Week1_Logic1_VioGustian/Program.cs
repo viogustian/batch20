@@ -1,12 +1,3 @@
-﻿using System;
+﻿using Week1_Logic1_VioGustian;
 
-namespace Week1_Logic1
-{
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            FooBarr.Generate(15);
-        }
-    }
-}
+FooBarr.Generate(15);
