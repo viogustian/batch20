@@ -1,5 +1,5 @@
-namespace Week1_Logic1_VioGustian;
-public class FooBarr
+namespace Week1Logic1VioGustian;
+public class FooBar
 {
     public static void Generate(int n)
     {

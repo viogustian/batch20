@@ -1,4 +1,4 @@
-namespace Week1_Logic2_VioGustian;
+namespace Week1Logic2VioGustian;
 public class QueueLogic
 {
     private Queue<string> _queue = new();

@@ -1,4 +1,4 @@
-﻿using Week1_Logic2_VioGustian;
+﻿using Week1Logic2VioGustian;
 
 QueueLogic myQueue = new();
 myQueue.Enqueue("A");
