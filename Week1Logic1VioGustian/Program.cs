@@ -1,3 +1,3 @@
-﻿using Week1_Logic1_VioGustian;
+﻿using Week1Logic1VioGustian;
 
 FooBar.Generate(15);
