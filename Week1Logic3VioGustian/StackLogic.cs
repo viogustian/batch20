@@ -1,24 +1,25 @@
 namespace Week1Logic3VioGustian;
 
 public class StackLogic
-{    
-    private readonly Stack<string> _words = new();
+{
+    private readonly List<object> _items = new();
 
-    public void Type(string word)
-    {    
-        _words.Push(word);
-        Console.WriteLine($"Typed {word}");
-    }
-    
-    public void Undo()
+    public void Type(object item)
     {
-        if(_words.Count==0)
+        _items.Add(item);
+        Console.WriteLine($"Typed {item}");
+    }
+
+    public void Undo()
+    {    
+        if(_items.Count == 0)
         {
             Console.WriteLine("Nothing to undo.");
-            return;
         }
-        
-        string word = _words.Pop();
-        Console.WriteLine($"Undid {word}");
+
+        int LastIndex = _items.Count - 1; 
+        object item = _items[LastIndex];
+        _items.RemoveAt(LastIndex);
+        Console.WriteLine($"Undid {item}");
     }
 }
