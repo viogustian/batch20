@@ -38,3 +38,13 @@ A console application implementing a Last-In-First-Out (LIFO) stack system that 
 
 **Output:**  
 ![Stack Logic Execution Result](./Week1Logic3VioGustian/output.png)
+
+### 4. Week 1 - Logic 4: Sequence Logic
+
+**Description:** 
+A console application that manages a sequence of integers using a custom Node structure (Head & Tail Linked List). The program processes operations using direct method calls and handles the following specific requirements:
+- `Append(val)`: Adds a new node containing `[val]` to the tail of the sequence and outputs **"Appended [val]"**.
+- `Print()`: Traverses the connected nodes from head to tail and outputs the sequence in the format **"Sequence: [val1] -> [val2]"**.
+
+**Output:** 
+![Sequence Logic Execution Result](./Week1Logic4VioGustian/output.png)

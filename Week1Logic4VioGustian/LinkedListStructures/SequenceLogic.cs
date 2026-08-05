@@ -15,7 +15,7 @@ public class SequenceLogic
             _tail = newNode;
         }else
         {
-            _tail.Next = newNode;
+            _tail!.Next = newNode;
             _tail = newNode;   
         }
 
@@ -30,10 +30,10 @@ public class SequenceLogic
 
         while(current is not null)
         {
-            values.Add(current.Value.toString());
+            values.Add(current.Value.ToString());
             current = current.Next;
         }
 
-        Console.WriteLine($"");
+        Console.WriteLine($"Sequence: {string.Join("->", values)}");
     }
 }
