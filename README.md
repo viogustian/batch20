@@ -48,3 +48,14 @@ A console application that manages a sequence of integers using a custom Node st
 
 **Output:** 
 ![Sequence Logic Execution Result](./Week1Logic4VioGustian/output.png)
+
+### 5. Week 1 - Logic 5: Circular Queue Logic
+
+**Description:**  
+A console application implementing a fixed-size Circular Queue (ring buffer) that processes operations using direct method calls. The program is built with Separation of Concerns (SoC) and handles the following specific requirements:
+- `Log(val)`: Adds `[val]` to the buffer and outputs **"Logged [val]"**. If the buffer has reached its maximum capacity, outputs **"Buffer Full"** and rejects the value instead.
+- `Read()`: Removes and outputs the oldest unread value in the format **"Read [val]"**.
+- **Edge Case Handling**: Outputs **"Log is Empty."** if `Read()` is called but there is no value left in the buffer.
+
+**Output:**  
+![Circular Queue Logic Execution Result](./Week1Logic5VioGustian/output.png)
