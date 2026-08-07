@@ -2,43 +2,61 @@ namespace Week1Logic5VioGustian;
 
 public class CircularQueue<T>
 {
-    public int Capacity {get; set;}
-    public T[] Queue {get; set;}
-    public int Front {get; set;}
-    public int Rear {get; set;}
-
+    private int _capacity;
+    private T[] _queue;
+    private int _front;
+    private int _rear;
 
     public CircularQueue(int capacity)
     {
-        Capacity = capacity;
-        Queue = new T[Capacity];
-        Front = -1;
-        Rear = -1;
+        _capacity = capacity;
+        _queue = new T[_capacity];
+        _front = -1;
+        _rear = -1;
     }
 
-    public bool IsEmpty => Front == -1;
-    public bool IsFull => (Rear + 1) % Capacity == 0;
+    public int Capacity => _capacity;
+    public bool IsEmpty => _front == -1;
+    public bool IsFull => (_rear + 1) % Capacity == _front;
 
-
-    public void Enqueue(T item)
+    public void Log(T item)
     {
         if(IsFull)
         {
-            Console.WriteLine("Queue penuh");
-            
-        }else
-        {
-            Front = 0;
+            Console.WriteLine("Buffer Full");
+            return;
         }
 
-        Rear = (Rear + 1) % Capacity;
-        Queue[Rear] = item;
+        if(IsEmpty)
+        {
+            _front = 0;
 
-    }
+        }
+        _rear = (_rear + 1) % Capacity;
+        _queue[_rear] = item;
+        Console.WriteLine($"Logged {item}");
+    } 
 
-    public void Dequeue()
+    public T? Read()
     {
-        
+        if(IsEmpty)
+        {
+            Console.WriteLine("Log is Empty.");
+            return default;
+        }
+
+        T item = _queue[_front];
+
+        if(_rear == _front)
+        {
+            _rear = -1;
+            _front = -1;
+        }else
+        {
+           _front = (_front + 1) % Capacity;
+        }
+        Console.WriteLine($"Read {item}");
+        return item;
     }
 
 }
