@@ -59,3 +59,15 @@ A console application implementing a fixed-size Circular Queue (ring buffer) tha
 
 **Output:**  
 ![Circular Queue Logic Execution Result](./Week1Logic5VioGustian/output.png)
+
+### 6. Week 2 - Logic 1: FooBarJazz
+
+**Description:**  
+A console application that extends the Week 1 FooBar logic with a third rule based on divisibility by `7`. Unlike the original if-else-if approach, matching rules now concatenate instead of being mutually exclusive:
+- Multiples of `3` print **"foo"**.
+- Multiples of `5` print **"bar"**.
+- Multiples of `7` print **"jazz"**.
+- Numbers matching multiple rules print the combined output (e.g. `21` → **"foojazz"**, `35` → **"barjazz"**, `105` → **"foobarjazz"**).
+
+**Output:**  
+![FooBarJazz Execution Result](./Week2Logic1VioGustian/output.png)
