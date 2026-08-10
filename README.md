@@ -71,3 +71,15 @@ A console application that extends the Week 1 FooBar logic with a third rule bas
 
 **Output:**  
 ![FooBarJazz Execution Result](./Week2Logic1VioGustian/output.png)
+
+### 7. Week 2 - Logic 2: Queue VIP Logic
+
+**Description:**  
+A console application implementing a First-In-First-Out (FIFO) queue system that includes a priority line. The program is built with Separation of Concerns (SoC) and handles the following specific requirements:
+- `Enqueue(val)`: Adds `[val]` to the back of the queue and outputs **"Queued [val]"**.
+- `EnqueueVip(val)`: Adds `[val]` to the absolute front of the queue instead of the back and outputs **"VIP Queued [val]"**.
+- `Process()`: Removes the front value of the queue and outputs **"Processed [val]"**.
+- **Edge Case Handling**: Outputs **"Queue is empty"** if `Process()` is called but there is no value left in the queue.
+
+**Output:**  
+![Queue VIP Logic Execution Result](./Week2Logic2VioGustian/output.png)
