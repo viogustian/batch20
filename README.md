@@ -83,3 +83,17 @@ A console application implementing a First-In-First-Out (FIFO) queue system that
 
 **Output:**  
 ![Queue VIP Logic Execution Result](./Week2Logic2VioGustian/output.png)
+
+### 8. Week 2 - Logic 3: Stack Logic Limit
+
+**Description:**
+A console application that extends the Week 1 Stack Logic with a maximum history limit of `3` items. The program maintains a Last-In-First-Out (LIFO) stack system using direct method calls and handles the following specific requirements:
+
+* `Type(word)`: Pushes `[word]` to the top of the stack and outputs **"Typed [word]"**.
+* **Maximum History Limit**: The stack can set a maximum items.
+* **History Overflow**: If `Type(word)` is called when the stack already contains maximum items limit, the oldest item at the absolute bottom of the stack is removed to make room for the new item. The program outputs **"Dropped bottom, Typed [word]"**.
+* `Undo()`: Removes the top value of the stack and outputs **"Undid [word]"**.
+* **Edge Case Handling**: Outputs **"Nothing to undo."** if `Undo()` is called but there is no value left in the stack.
+
+**Output:**  
+![Stack Logic Limit Execution Result](./Week2Logic3VioGustian/output.png)
