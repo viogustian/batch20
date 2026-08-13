@@ -97,3 +97,14 @@ A console application that extends the Week 1 Stack Logic with a maximum history
 
 **Output:**  
 ![Stack Logic Limit Execution Result](./Week2Logic3VioGustian/output.png)
+
+### 9. Week 2 - Logic 4: Doubly Linked List Sequence Logic 
+ 
+**Description:**   
+A console application that upgrades the Week 1 Sequence Logic into a Doubly Linked List using a custom `Node` structure with `Next` and `Previous` references. The program processes operations using direct method calls and handles the following specific requirements: 
+- `Append(val)`: Adds a new node containing `[val]` to the tail of the sequence and outputs **"Appended [val]"**. 
+- `Print()`: Traverses the connected nodes from head to tail using the `Next` reference and outputs the sequence in the format **"Sequence: [val1] -> [val2]"**. 
+- `PrintReverse()`: Traverses the connected nodes from tail to head using the `Previous` reference and outputs the reversed sequence in the format **"Reversed: [val2] -> [val1]"**. 
+ 
+**Output:**   
+![Doubly Linked List Sequence Logic Execution Result](./Week2Logic4VioGustian/output.png)
