@@ -108,3 +108,15 @@ A console application that upgrades the Week 1 Sequence Logic into a Doubly Link
  
 **Output:**   
 ![Doubly Linked List Sequence Logic Execution Result](./Week2Logic4VioGustian/output.png)
+
+### 10. Week 2 - Logic 5: Circular Queue Overwrite Logic
+
+**Description:** 
+A console application that extends the Week 1 Circular Queue logic. Instead of rejecting new items when the fixed-size ring buffer is full, the program now dynamically overwrites the oldest data. Built with Separation of Concerns (SoC), it handles the following specific requirements:
+- `Log(val)`: Adds `[val]` to the buffer. If the buffer is not full, it outputs **"Logged [val]"**.
+- **Capacity Overflow**: If `Log(val)` is called when the buffer has reached its maximum capacity, the oldest unread log is dropped and replaced by `[val]`. The program outputs **"Overwritten oldest with [val]"**.
+- `Read()`: Removes and outputs the oldest unread value in the format **"Read [val]"**.
+- **Edge Case Handling**: Outputs **"Log is Empty."** if `Read()` is called but there is no value left in the buffer.
+
+**Output:** 
+![Circular Queue Overwrite Logic Execution Result](./Week2Logic5VioGustian/output.png)
