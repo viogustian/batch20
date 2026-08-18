@@ -120,3 +120,17 @@ A console application that extends the Week 1 Circular Queue logic. Instead of r
 
 **Output:** 
 ![Circular Queue Overwrite Logic Execution Result](./Week2Logic5VioGustian/output.png)
+
+### 11. Week 3 - Logic 1: FooBarJazz
+
+**Description:**   
+A console application that extends the Week 2 FooBarJazz logic with additional divisor-to-text rules. Matching rules are evaluated in ascending divisor order and concatenated when a number is divisible by multiple factors: 
+- Multiples of `3` print **"foo"**. 
+- Multiples of `4` print **"baz"**. 
+- Multiples of `5` print **"bar"**. 
+- Multiples of `7` print **"jazz"**. 
+- Multiples of `9` print **"huzz"**. 
+- Numbers matching multiple rules print the combined output following the ascending divisor order. For example, `36` is divisible by `3`, `4`, and `9`, so it prints **"foobazhuzz"**. 
+ 
+**Output:**   
+![FooBarJazz Execution Result](./Week3Logic1VioGustian/output.png)
