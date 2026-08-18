@@ -134,3 +134,15 @@ A console application that extends the Week 2 FooBarJazz logic with additional d
  
 **Output:**   
 ![FooBarJazz Execution Result](./Week3Logic1VioGustian/output.png)
+
+### 12. Week 3 - Logic 2: Priority Queue Logic
+
+**Description:**  
+A console application that replaces the VIP queue rule from Week 2 with an integer-based priority queue system. The queue processes items based on their priority while maintaining FIFO order when multiple items have the same priority:
+- `Enqueue(val, p)`: Adds `[val]` to the queue with priority `[p]` and outputs **"Queued [val] with priority [p]"**.
+- `Process()`: Finds and removes the value with the highest priority and outputs **"Processed [val]"**.
+- **FIFO Tiebreak**: If multiple values have the same highest priority, the oldest value is processed first.
+- **Edge Case Handling**: Outputs **"Queue is Empty"** if `Process()` is called but there is no value left in the queue.
+
+**Output:**  
+![Priority Queue Logic Execution Result](./Week3Logic2VioGustian/output.png)
