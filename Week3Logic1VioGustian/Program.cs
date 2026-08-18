@@ -1,0 +1,1 @@
+﻿FooBazHuzz.Generate(20);
