@@ -146,3 +146,15 @@ A console application that replaces the VIP queue rule from Week 2 with an integ
 
 **Output:**  
 ![Priority Queue Logic Execution Result](./Week3Logic2VioGustian/output.png)
+
+### 13. Week 3 - Logic 3: Stack Logic Undo & Redo
+
+**Description:**
+A console application that extends the Week 2 Stack Logic Limit by introducing a `Redo` functionality. The program manages both the main stack and a redo history, handling the following specific requirements:
+- `Type(word)`: Pushes `[word]` to the top of the stack, **clears the redo history** (as the timeline has changed), and outputs **"Typed [word]"**. If the stack reaches its maximum history limit, the oldest item at the bottom is dropped, outputting **"Dropped bottom, Typed [word]"**.
+- `Undo()`: Removes the top value of the stack, saves it to the redo history, and outputs **"Undid [word]"**.
+- `Redo()`: Restores the most recently undone value from the redo history back to the main stack and outputs **"Redid [word]"**.
+- **Edge Case Handling**: Outputs **"Nothing to undo."** if `Undo()` is called when the stack is empty, and **"Nothing to redo."** if `Redo()` is called when the redo history is empty.
+
+**Output:**  
+![Stack Logic Undo Redo Execution Result](./Week3Logic3VioGustian/output.png)
