@@ -158,3 +158,29 @@ A console application that extends the Week 2 Stack Logic Limit by introducing a
 
 **Output:**  
 ![Stack Logic Undo Redo Execution Result](./Week3Logic3VioGustian/output.png)
+
+
+### 14. Week 3 - Logic 4: Sorted Doubly Linked List Logic
+
+**Description:** 
+A console application that upgrades the Week 2 Doubly Linked List logic. Instead of merely appending new nodes to the tail, the system now automatically traverses the list and inserts new values in **ascending order**. The program processes operations using direct method calls and handles the following specific requirements:
+- `Insert(val)`: Finds the correct sorted position for `[val]` within the doubly linked list, updates the surrounding `Next` and `Previous` references, and outputs **"Inserted [val]"**.
+- `Print()`: Traverses the connected nodes from head to tail using the `Next` reference and outputs the sorted sequence in the format **"Sequence: [val1] -> [val2]"**.
+- `PrintReverse()`: Traverses the connected nodes from tail to head using the `Previous` reference and outputs the reversed (descending) sequence in the format **"Reversed: [val2] -> [val1]"**.
+
+**Output:** 
+![Sorted Doubly Linked List Execution Result](./Week3Logic4VioGustian/output.png)
+
+### 15. Week 3 - Logic 5: Circular Queue Alert Logic
+
+**Description:**  
+A console application that extends the Week 2 Circular Queue Overwrite logic by introducing dynamic capacity alerts. Before each `Log(val)` operation is executed, the program evaluates the current buffer utilization and raises warnings accordingly:
+- `Log(val)`: Adds `[val]` to the buffer. If the buffer is not full, it outputs **"Logged [val]"**.
+- **Capacity Overflow**: If `Log(val)` is called when the buffer has reached its maximum capacity, the oldest unread log is dropped and replaced by `[val]`. The program outputs **"Overwritten oldest with [val]"**.
+- **Warning Alert**: Before logging, if the current unread logs utilize **66% or more** of the buffer's capacity, the program outputs **"Warning: Buffer at 66%"**.
+- **Critical Alert**: Before logging, if the current unread logs utilize **100%** of the buffer's capacity, the program outputs **"Critical: Buffer Full"** instead of the warning.
+- `Read()`: Removes and outputs the oldest unread value in the format **"Read [val]"**.
+- **Edge Case Handling**: Outputs **"Log is Empty."** if `Read()` is called but there is no value left in the buffer.
+
+**Output:**  
+![Circular Queue Alert Logic Execution Result](./Week3Logic5VioGustian/output.png)
