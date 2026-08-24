@@ -184,3 +184,14 @@ A console application that extends the Week 2 Circular Queue Overwrite logic by 
 
 **Output:**  
 ![Circular Queue Alert Logic Execution Result](./Week3Logic5VioGustian/output.png)
+
+### 16. Week 3 - Logic 6: Rule-Based Generator
+
+**Description:** 
+A console application that refactors the FooBazHuzz logic into an object-oriented, client-configurable rule engine. By utilizing a `SortedDictionary`, the program allows users to dynamically register divisor-to-text rules at runtime, guaranteeing they are evaluated in ascending divisor order for deterministic output. The class handles the following specific requirements:
+- `AddRule(divisor, output)`: Registers a new divisor-to-text mapping at runtime.
+- `Evaluate(number)`: Evaluates a single number against all registered rules, concatenating outputs when multiple rules match (e.g., if rules for 3="foo" and 4="baz" exist, 12 prints **"foobaz"**).
+- `GenerateSequence(start, end)`: Generates and returns a comma-separated sequence over a specified range based on the configured rules.
+
+**Output:** 
+![Rule Based Generator Execution Result](./Week4Logic1VioGustian/output.png)
