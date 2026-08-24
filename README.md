@@ -195,3 +195,14 @@ A console application that refactors the FooBazHuzz logic into an object-oriente
 
 **Output:** 
 ![Rule Based Generator Execution Result](./Week4Logic1VioGustian/output.png)
+
+### 17. Week 4 - Logic 2: Keyword-Based Priority Queue
+
+**Description:** 
+A console application that refactors the Priority Queue logic by introducing an automated, client-configurable keyword system. Instead of manually providing a priority integer for every item, the queue evaluates incoming data and assigns priority dynamically based on pre-registered rules. The class handles the following specific requirements:
+- `AddRule(keyword, priority)`: Registers a string keyword-to-priority mapping at runtime.
+- `Enqueue(val)`: Adds `[val]` to the queue. The program scans the value for matching keywords. If found, the mapped priority is assigned automatically. If no rule matches, a default priority of `0` is assigned. Outputs **"Queued [val] with priority [p]"**.
+- `Process()`: Removes the value with the highest priority and outputs **"Processed [val]"**, while still maintaining a strict FIFO tiebreak order when multiple items share the highest priority.
+
+**Output:** 
+![Keyword Priority Queue Execution Result](./Week4Logic2VioGustian/output.png)
