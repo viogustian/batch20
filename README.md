@@ -218,3 +218,15 @@ A console application that refactors the Stack Logic Undo & Redo into an object-
 
 **Output:** 
 ![Configurable Validation Stack Logic Execution Result](./Week4Logic3VioGustian/output.png)
+
+### 19. Week 4 - Logic 4: Configurable Sorting & Filtering Sequence Logic
+
+**Description:** 
+A console application that refactors the Week 3 Sorted Doubly Linked List. Instead of sorting nodes permanently upon insertion, the program reverts to a simple append mechanism and introduces a client-configurable sorting and filtering engine. The evaluation is done on-the-fly during output without altering the underlying Doubly Linked List structure. The class handles the following specific requirements:
+- `SetSorting(comparer)`: Configures a custom sorting comparator (`Func<int, int, int>`) that defines how the sequence should be ordered during output.
+- `AddFilter(filterRule)`: Registers a boolean predicate rule (`Func<int, bool>`). Multiple filters can be added, and all must pass (logical AND) for a node's value to be displayed.
+- `Append(val)`: Reverts to a standard $O(1)$ insertion by adding a new node containing `[val]` to the tail of the sequence and outputs **"Appended [val]"**.
+- `Print()` and `PrintReverse()`: Traverses the doubly linked list. Before displaying, it dynamically applies all configured filter rules and the custom sorting logic to output the result in the format **"Sequence: [val1] -> [val2]"** or **"Reversed: [val2] -> [val1]"**.
+
+**Output:** 
+![Configurable Sorting & Filtering Sequence Logic Execution Result](./Week4Logic4VioGustian/output.png)
