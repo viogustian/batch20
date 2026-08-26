@@ -206,3 +206,15 @@ A console application that refactors the Priority Queue logic by introducing an 
 
 **Output:** 
 ![Keyword Priority Queue Execution Result](./Week4Logic2VioGustian/output.png)
+
+### 18. Week 4 - Logic 3: Configurable Validation Stack Logic
+
+**Description:** 
+A console application that refactors the Stack Logic Undo & Redo into an object-oriented, client-configurable validation engine. The program allows users to dynamically register predicate rules (`Func<string, bool>`) that strictly evaluate incoming data before it is allowed into the history stack. The class handles the following specific requirements:
+- `AddValidationRule(rule)`: Registers a new boolean predicate rule at runtime. All registered rules must pass (logical AND) for an input to be successfully accepted.
+- `Type(word)`: Evaluates the input against all validation rules. If it passes, the word is added to the stack, the redo history is cleared, and it outputs **"Typed [word]"**. If validation fails, the word is denied and it outputs **"Rejected [word]"** (or just **"Rejected"** for empty inputs).
+- **History Overflow**: Maintains the maximum history limit. If the stack is full upon a successful type operation, the oldest item at the bottom is dropped, outputting **"Dropped bottom, Typed [word]"**.
+- `Undo()` and `Redo()`: Preserves the previous LIFO history traversal mechanics, safely outputting **"Nothing to undo."** or **"Nothing to redo."** if boundaries are reached.
+
+**Output:** 
+![Configurable Validation Stack Logic Execution Result](./Week4Logic3VioGustian/output.png)
