@@ -230,3 +230,20 @@ A console application that refactors the Week 3 Sorted Doubly Linked List. Inste
 
 **Output:** 
 ![Configurable Sorting & Filtering Sequence Logic Execution Result](./Week4Logic4VioGustian/output.png)
+
+### 20. Week 4 - Logic 5: Configurable Circular Queue Logic
+
+**Description:**
+A console application that refactors the Week 3 Circular Queue Alert logic into a fully client-configurable buffer. Instead of fixed capacity and a hardcoded overwrite behavior, the class now exposes runtime configuration methods while preserving the existing alert mechanics. It handles the following specific requirements:
+- `SetCapacity(n)`: Sets the buffer's maximum capacity to `[n]` and resets any existing data in the buffer.
+- `SetOverwritePolicy(isOverwriteEnabled)`: Configures the buffer's behavior when full. If `true`, a full buffer overwrites the oldest unread log. If `false`, a full buffer rejects new entries instead.
+- `Log(val)`: Adds `[val]` to the buffer. If the buffer is not full, it outputs **"Logged [val]"**.
+- **Capacity Overflow (Overwrite Enabled)**: If `Log(val)` is called when the buffer is full and overwrite is enabled, the oldest unread log is dropped and replaced by `[val]`, outputting **"Overwritten oldest with [val]"**.
+- **Capacity Overflow (Overwrite Disabled)**: If `Log(val)` is called when the buffer is full and overwrite is disabled, the new value is rejected instead.
+- **Warning Alert**: Before logging, if the current unread logs utilize **66% or more** of the buffer's capacity, the program outputs **"Warning: Buffer at 66%"**.
+- **Critical Alert**: Before logging, if the current unread logs utilize **100%** of the buffer's capacity, the program outputs **"Critical: Buffer Full"** instead of the warning.
+- `Read()`: Removes and outputs the oldest unread value in the format **"Read [val]"**.
+- **Edge Case Handling**: Outputs **"Log is Empty."** if `Read()` is called but there is no value left in the buffer.
+
+**Output:**
+![Configurable Circular Queue Logic Execution Result](./Week4Logic5VioGustian/output.png)
